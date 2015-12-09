@@ -1,0 +1,6 @@
+logstash:
+    image: logstash:2.1.0
+    command: logstash -f /logstash.conf
+    volumes:
+        - ./logstash.conf:/logstash.conf
+        - ./sample_logs:/sample_logs
