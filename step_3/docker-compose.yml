@@ -3,4 +3,4 @@ logstash:
     command: logstash -f /logstash.conf
     volumes:
         - ./logstash.conf:/logstash.conf
-        - ./sample_logs:/sample_logs
+        - ./apache_sample.log:/apache_sample.log
